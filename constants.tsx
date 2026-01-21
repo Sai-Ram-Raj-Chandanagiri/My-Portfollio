@@ -244,6 +244,8 @@ export const CERTIFICATIONS = [
   "Google Cloud Platform Essentials – Google",
   "Generative AI Fundamentals – Google",
   "Building with ClaudeAPI - Anthropic",
+  "Introduction to Model Context Protocol - Anthropic",
+  "Model Context Protocol: Advanced Topics - Anthropic",
   "Cybersecurity Essentials – Inflow Technologies",
   "Java Development Certification – Internshala",
   "Problem Solving and Programming in C - NPTEL"
