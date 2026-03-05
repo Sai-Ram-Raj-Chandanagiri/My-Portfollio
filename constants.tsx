@@ -87,6 +87,33 @@ const HerbiverseIcon = ({ size = 24, ...props }: any) => (
   </svg>
 );
 
+// Symbolises Anvil / Forge (Building & Crafting Software Modules)
+const ForgeIcon = ({ size = 24, ...props }: any) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={props.strokeWidth || 1.5}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    {...props}
+  >
+    {/* Anvil body */}
+    <path d="M4 14h16v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2z" />
+    {/* Anvil top */}
+    <path d="M6 14V12a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2" />
+    {/* Hammer */}
+    <path d="M12 10V6" />
+    <rect x="9" y="3" width="6" height="3" rx="1" />
+    {/* Base */}
+    <line x1="7" y1="18" x2="7" y2="21" />
+    <line x1="17" y1="18" x2="17" y2="21" />
+    <line x1="5" y1="21" x2="19" y2="21" />
+  </svg>
+);
+
 export const PERSONAL_INFO = {
   name: "Sai Ram Raj Chandanagiri",
   role: "Full Stack Developer & AI/ML Engineer",
@@ -163,6 +190,15 @@ export const PROJECTS: Project[] = [
     icon: HerbiverseIcon,
     link: "https://github.com/Taruna-M/Virtual-Herbal-Garden/tree/main",
     color: "#22c55e" // Green
+  },
+  {
+    title: "FORGE",
+    type: "Enterprise Platform",
+    description: "Framework for Organisational Resource Governance and Efficiency — a three-pillared platform enabling NGOs and Startups to discover, deploy, and manage software modules with AI-powered orchestration.",
+    techStack: ["TypeScript", "Turborepo", "Docker", "Playwright", "pnpm"],
+    icon: ForgeIcon,
+    link: "https://github.com/Sai-Ram-Raj-Chandanagiri/FORGE",
+    color: "#14b8a6" // Teal
   }
 ];
 
